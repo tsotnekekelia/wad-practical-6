@@ -2,10 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>YourTube</title>
+    <title>Booker</title>
     <link rel="stylesheet" href="res/css/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="res/js/Item.js"></script>
+    <script src="res/js/Cart.js"></script>
+    <script src="res/js/script.js"></script>
 </head>
 <body>
 <header>
@@ -15,26 +19,22 @@
         </div>
         <div class="cart-container">
             <img src="res/images/cart.png" alt="Cart">
-            <span>3</span>
+            <span>0</span>
         </div>
     </nav>
 </header>
-
 <section>
-    <div class="item-container">
+    <div id="item-container">
         <div class="gallery">
-            <img src="res/images/image1.jpg" id="item-main-image" alt="">
+            <img id="item-main-image" alt="">
             <div class="thumbnails">
-                <img src="res/images/image2.jpg" alt="">
-                <img src="res/images/image3.jpg" alt="">
-                <img src="res/images/image4.jpg" alt="">
             </div>
         </div>
-        <h1>Programming books bundle</h1>
-        <button class="add-to-cart">Add to cart</button>
+        <h1></h1>
+        <button class="add-to-cart" id="main-button">Add to cart</button>
         <div class="comment-contents">
             <div class="comment">
-                Nice book!
+                Nice books!
             </div>
         </div>
         <div class="comment-box">
@@ -43,31 +43,9 @@
     </div>
 
     <div class="suggested-container">
-        <h3>Total: 0.00$</h3>
+        <h3>Total: <span id="total-price">0.00</span>$</h3>
         <h3>Similar items</h3>
         <ul>
-            <li>
-                <div>
-                    <img src="res/images/image5.jpg">
-                    <h4><a href="#">Java Programming</a></h4>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-                <div>
-                    <img src="res/images/image6.jpg">
-                    <h4><a href="#">Programming in C++</a></h4>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-                <div>
-                    <img src="res/images/image7.jpg">
-                    <h4><a href="#">Programming and fundamentals of Python</a></h4>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-                <div>
-                    <img src="res/images/image8.jpg">
-                    <h4><a href="#">My first coding book</a></h4>
-                    <button class="add-to-cart">Add to cart</button>
-                </div>
-            </li>
         </ul>
     </div>
 </section>

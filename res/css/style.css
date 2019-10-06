@@ -58,7 +58,7 @@ section {
     margin: 30px auto;
 }
 
-section div.item-container{
+section div#item-container{
     flex-grow: 10;
 }
 section div.suggested-container{
@@ -71,26 +71,30 @@ section div.suggested-container{
     border: 1px solid #35444d;
     border-radius: 3px;
 }
-.add-to-cart{
-    padding: 10px;
-    color: #ffffff;
-    background-color: #455a64;
-    border: 1px solid #253037;
-    border-radius: 3px;
-}
 .add-to-cart:hover{
     cursor: pointer;
     border: 1px solid #455a64;
 }
-.item-container h1{
+.remove-from-cart{
+    padding: 10px;
+    color: #ffffff;
+    background-color: #642027;
+    border: 1px solid #341114;
+    border-radius: 3px;
+}
+.remove-from-cart:hover{
+    cursor: pointer;
+    border: 1px solid #642027;
+}
+#item-container h1{
     margin: 15px 15px;
 }
 
-.item-container .gallery{
+#item-container .gallery{
     text-align: center;
 }
 
-.item-container .thumbnails img{
+#item-container .thumbnails img{
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -99,12 +103,12 @@ section div.suggested-container{
     margin-right: 20px;
     cursor: pointer}
 
-.item-container .thumbnails img:hover{
+#item-container .thumbnails img:hover{
     cursor: pointer;
     opacity: .7;
 }
 
-.item-container .thumbnails::after{
+#item-container .thumbnails::after{
     display: block;
     content: "";
     clear: both;
